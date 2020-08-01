@@ -27,6 +27,7 @@ jobs:
     runs-on: linux (arm)64bit
 
    steps:
+   - badge:![.github/workflows/c-cpp.yml](https://github.com/zachwylde00/RPC.DigitalHundred/workflows/.github/workflows/c-cpp.yml/badge.svg?event=create_go.packages_and_required_named_files_and_place_in-updated_repository_as_automated_action.activity=.ci/create)
    - uses: rpc-console
    - make: onCommit(configurate_RPCConsole)
       run: .ci/configure_rpc-console_make_direcrory=USD-DigitalHundred-D100;then_import=wget:"https:github.com/FRSCMaster/QTRPC-Console_data_updating-currentCoin_to_name=USD-DigitalHundred/D100@value=$100.00USD/BTC_per_coin
