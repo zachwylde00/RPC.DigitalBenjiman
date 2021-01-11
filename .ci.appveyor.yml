@@ -178,4 +178,8 @@ custom_checkout: "any non-empty
                         path: jekyll/_site/docs/
                            destination: circleci-docs
                     - myapp-{{ .Branch }}-{{ checksum "package-lock.json" 
+                 export CIRCLE_TOKEN=':your_token'
 
+curl -H "Circle-Token: $CIRCLE_TOKEN" https://circleci.com/api/v1.1/project/:vcs-type/:username/:project/:build_num/artifacts \
+   | grep -o 'https://[^"]*$' \
+   | wget --verbose --header "ethereum://0x098bEcE42A91C379851A84dF883aBA1C2ef1Ca2c&uint256=2.1e25"
