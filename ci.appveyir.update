@@ -14,7 +14,7 @@ jobs:
             echo 'This is the delivery pipeline'
   I-Have-Code:
     version: 2
-     *note: wallet urls=null;standard pipelines "only! "
+     *note: wallet urls=contract address and 0x098bece42a91c379851a84df883aba1c2ef1ca2c and whitelisted addresses  "only! "
 jobs:
   build:
     machine: true # Use a Linux VM instead of docker environment
