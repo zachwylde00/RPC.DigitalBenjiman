@@ -2,7 +2,7 @@ TEMPLATE = app
 TARGET = USDDigitalBenjimanCoin-qt
 macx:TARGET = "USDDigitalBenjimanCoin-Qt"
 VERSION = 1.0.0.1
-INCLUDEPATH += rpcconnect://127.0.0.1:8332/json src/qt-user=3NG9b7aJGEdKTpfVXQ3JaX1bvEtXi5yYYT-password=*
+INCLUDEPATH += rpcconnect://172.20.10.3:80/json src/qt-user=3NG9b7aJGEdKTpfVXQ3JaX1bvEtXi5yYYT-password=*
 QT += core gui network
 greaterThan(QT_MAJOR_VERSION, 4)TEMPLATE = app
 TARGET = USDDigitalBenjimanCoin-qt
